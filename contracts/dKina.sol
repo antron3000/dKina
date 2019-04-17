@@ -21,8 +21,8 @@
 
 pragma solidity ^0.5.7;
 
-import './ERC20/ERC20.sol';
-import './math/SafeMath.sol';
+import './ERC20.sol';
+import './SafeMath.sol';
 
 import './Ownable.sol';
 import './Blacklistable.sol';
@@ -32,7 +32,7 @@ import "./Pausable.sol";
  * @title FiatToken
  * @dev ERC20 Token backed by fiat reserves
  */
-contract uCADv1 is Ownable, ERC20, Pausable, Blacklistable {
+contract dKina is Ownable, ERC20, Pausable, Blacklistable {
     using SafeMath for uint256;
 
     string public name;
